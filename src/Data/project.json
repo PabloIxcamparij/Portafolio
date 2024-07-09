@@ -1,0 +1,16 @@
+{
+  "projectData": [
+    {
+      "title": "Recipe Book",
+      "description": "The recipe book is a web page that uses an API to display recipes. It is also possible to save favorite recipes, for save the favorites is used the local storage",
+      "url": "https://github.com/PabloIxcamparij/FrontEnd_Recetario.git",
+      "urlProject": "https://recetarioixcam.netlify.app"
+    },
+    {
+      "title": "Guitar store",
+      "description": "Design of a guitar store. It is made in react, it is reactive, and uses local storage to keep track of the cart.",
+      "url": "https://github.com/PabloIxcamparij/Proyecto_React_Uno.git",
+      "urlProject": "https://guitarixcam.netlify.app"
+    }
+  ]
+}
