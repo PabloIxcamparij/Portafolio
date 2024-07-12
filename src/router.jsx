@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import ProjectsPage from "./views/ProjectsPage";
 import AboutPage from "./views/AboutPage";
-import ContactPage from "./views/ContactPage"
+import EducationPage from "./views/EducationPage"
 import Layout from "./layouts/Layout"
 
 
@@ -13,7 +13,7 @@ export default function AppRouter() {
         <Route element={<Layout />}>
           <Route path="/" element={<AboutPage />} index />
           <Route path="/projects" element={<ProjectsPage />} />
-          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/education" element={<EducationPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
