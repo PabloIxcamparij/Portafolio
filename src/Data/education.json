@@ -1,0 +1,28 @@
+{
+  "educationData": [
+    {
+      "title": "Baccalaureate",
+      "description": "Baccalaureate obtained for pass media education (high school) in Costa Rica.",
+      "type": "Degree",
+      "state": "Completed"
+    },
+    {
+      "title": "International Baccalaureate Diploma",
+      "description": "Diploma known as the International Baccalaureate (IB). This is a high school diploma that teaches independent thinking. It is an internationally recognized alternative to high school programs.",
+      "type": "Diploma",
+      "state": "Completed"
+    },
+    {
+      "title": "React and TypeScript Certificate",
+      "description": "Certificate in React and TypeScript from Udemy.",
+      "type": "Certificate",
+      "state": "In Process"
+    },
+    {
+      "title": "Business Informatics Bacalaureat",
+      "description": "Currently completing a degree in Business Informatics from the University of Costa Rica.",
+      "type": "Degree",
+      "state": "In Process"
+    }
+  ]
+}

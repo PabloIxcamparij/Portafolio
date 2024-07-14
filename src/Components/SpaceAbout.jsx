@@ -3,12 +3,13 @@ import { Image } from "@nextui-org/react";
 import { Accordion, AccordionItem } from "@nextui-org/react";
 import Marquee from "react-fast-marquee";
 
-export default function SpaceInformation({ dataSpace }) {
+export default function SpaceAbout({ dataSpace }) {
   return (
-    <div className="w-full bg-slate-800 rounded-2xl p-4">
-      <h2 className="text-white text-lg font-bold mb-2 ">{dataSpace.title}</h2>
+    <div className="w-full bg-slate-800 text-white rounded-2xl p-4">
+     
+      <h2 className="text-lg font-bold mb-2 ">{dataSpace.title}</h2>
 
-      <span className="text-white">{dataSpace.information}</span>
+      <span>{dataSpace.information}</span>
 
       <Accordion>
         <AccordionItem
