@@ -1,12 +1,18 @@
 import React from "react";
 import { Link } from "@nextui-org/react";
+import { Accordion, AccordionItem } from "@nextui-org/react";
 
-export default function SpaceProject({ title, description, url, urlProject }) {
+export default function SpaceProject({
+  title,
+  description,
+  url,
+  urlProject,
+  tecUsing,
+}) {
   return (
     <div className="flex flex-col-reverse md:flex-row w-full bg-slate-800 rounded-2xl p-4 gap-4">
-      {/* div imagen de la pagina web */}
-
-      <div className=" bg-white w-full md:w-2/3 h-80 rounded-xl">
+      
+      <div className=" bg-white w-full h-120 md:w-3/4 md:h-full rounded-xl">
         <iframe
           src={urlProject}
           title="Project Preview"
@@ -14,6 +20,7 @@ export default function SpaceProject({ title, description, url, urlProject }) {
           height="100%"
           className="rounded-lg"
         />
+        
       </div>
 
       <div className="w-full flex flex-col md:w-2/4 gap-4">
@@ -28,6 +35,24 @@ export default function SpaceProject({ title, description, url, urlProject }) {
         <Link isExternal href={url} showAnchorIcon>
           Link to the project repositories
         </Link>
+
+        <Accordion>
+          <AccordionItem
+            key="1"
+            title={<h1 className="text-white">Technologies used</h1>}
+            textValue="Technologies used"
+            className="text-white font-bold"
+          >
+            <ul className="grid grid-cols-2 sm:grid-cols-3 gap-5">
+              {tecUsing.map((tec, index) => (
+                <li key={index} className="text-white">
+                  {tec.title}
+                </li>
+              ))}
+            </ul>
+          </AccordionItem>
+        </Accordion>
+
       </div>
     </div>
   );

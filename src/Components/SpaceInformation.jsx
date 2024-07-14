@@ -10,14 +10,14 @@ export default function SpaceInformation({ dataSpace }) {
 
       <span className="text-white">{dataSpace.information}</span>
 
-      <Accordion className="text-primary-50">
+      <Accordion>
         <AccordionItem
           key="1"
           title={<h1 className="text-white">Skills list</h1>}
           textValue="Skills list"
           className="text-white font-bold"
         >
-          <ul>
+          <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5">
             {dataSpace.dataBaseUrl.map((img, index) => (
               <li key={index} className="text-white">
                 {img.alt}
@@ -39,7 +39,6 @@ export default function SpaceInformation({ dataSpace }) {
           </div>
         ))}
       </Marquee>
-      
     </div>
   );
 }

@@ -10,6 +10,7 @@ export default function ProjectsPage() {
         {projectData.map((project, index) => (
           <SpaceProject
             key={index}
+            tecUsing={project.tecUsing}
             title={project.title}
             description={project.description}
             url={project.url}
