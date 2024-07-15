@@ -14,7 +14,7 @@ export default function AboutPage() {
         
         <span>
           I am
-          <span className="font-bold text-blue-300"> Software Developer </span>
+          <span className="font-bold text-blue-300"> Software Engineer </span>
           with skills in 
           <span className="font-bold text-blue-300"> FrontEnd </span> and
           <span className="font-bold text-blue-300"> BackEnd. </span> {""}
