@@ -14,7 +14,7 @@ export default function InformationGeneral() {
 
         <div className="flex flex-col text-white items-start gap-2">
           <p className="text-2xl font-bold">Jose Sorto Ixcamparij</p>
-          <p className="text-lg font-bold">Informatic</p>
+          <p className="text-lg font-bold">Software Engineer</p>
         </div>
       </div>
 

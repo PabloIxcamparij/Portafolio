@@ -30,7 +30,7 @@ export default function AboutPage() {
         <span>
           I am totally committed to the projetcs i work on. I always seeking to provide an efficient product.
           In addition, i work well in teamwork and, this is supported by knowledge of agile methodologies like 
-          <span className="font-bold text-blue-300">Scrum</span>.
+          <span className="font-bold text-blue-300"> Scrum</span>.
         </span>
 
       </div>
