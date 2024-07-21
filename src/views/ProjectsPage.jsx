@@ -4,7 +4,7 @@ import { projectData } from "../Data/project.json";
 
 export default function ProjectsPage() {
   return (
-      <div className="grid grid-cols-1 gap-5 p-8">
+      <div className="grid grid-cols-1 gap-5">
        
         {projectData.map((project, index) => (
           <SpaceProject

@@ -8,7 +8,7 @@ import SpaceAbout from "../Components/SpaceAbout";
 
 export default function AboutPage() {
   return (
-    <div className="p-5 text-white">
+    <div className="text-white">
 
       <div className="mb-5 gap-5 flex flex-col">
         

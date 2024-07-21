@@ -15,7 +15,7 @@ export default function Layout() {
 
         <div className="flex flex-col w-full bg-gray-900 rounded-xl overflow-y-auto">
           <Headermenu />
-          <div className="w-full flex-grow">
+          <div className="w-full flex-grow p-4">
             <Outlet />
           </div>
         </div>

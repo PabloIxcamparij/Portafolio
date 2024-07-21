@@ -4,7 +4,7 @@ import SpaceEducation from "../Components/SpaceEducation";
 
 export default function EducationPage() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-8 justify-center">
+    <div className="grid grid-cols-1 md:grid-cols-2 justify-center gap-5">
       {educationData.map((education, index) => (
         <SpaceEducation key={index} education={education} />
       ))}
