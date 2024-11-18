@@ -33,6 +33,23 @@
           "title": "CSS"
         }
       ]
+    },
+    {
+      "title": "EcoCard",
+      "description": "Game created as part of my social service. It is a card game that uses stores (zustand) to control its functionality, in addition to the local storage functionality for game scores.",
+      "url": "https://github.com/PabloIxcamparij/Proyecto_EcoCard",
+      "urlProject": "https://ecocard.netlify.app",
+      "tecUsing": [
+        {
+          "title": "React"
+        },
+        {
+          "title": "JavaScript"
+        },
+        {
+          "title": "Tailwind"
+        }
+      ]
     }
   ]
 }
