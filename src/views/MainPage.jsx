@@ -4,7 +4,7 @@ import {
   backEndImages,
   databaseImages,
 } from "../Data/ImgURL.json";
-import SpaceAbout from "../Components/SpaceAbout";
+import SpaceAboveMe from "../Components/SpaceAboveMe";
 
 export default function AboutPage() {
   return (
@@ -38,7 +38,7 @@ export default function AboutPage() {
       <h1 className="text-lg font-bold"> Web Design </h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 mt-5 gap-4">
-        <SpaceAbout
+        <SpaceAboveMe
           dataSpace={{
             title: "Front End",
             information:
@@ -46,7 +46,7 @@ export default function AboutPage() {
             dataBaseUrl: frontEndImages,
           }}
         />
-        <SpaceAbout
+        <SpaceAboveMe
           dataSpace={{
             title: "Back End",
             information:
@@ -54,7 +54,7 @@ export default function AboutPage() {
             dataBaseUrl: backEndImages,
           }}
         />
-        <SpaceAbout
+        <SpaceAboveMe
           dataSpace={{
             title: "Data Base",
             information:
