@@ -1,5 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Image } from "@nextui-org/react";
 import {
   faGithub,
   faLinkedin,
@@ -10,7 +11,14 @@ export default function InformationGeneral() {
   return (
     <div className="flex justify-around items-center flex-col md:flex-row xl:flex-col h-full w-full p-4 gap-5">
       <div className="flex flex-col gap-5 items-center">
-        <div className="bg-white w-40 h-40 rounded-full" />
+        {/* <div className="bg-white w-40 h-40 rounded-full" /> */}
+
+        <Image
+          alt="NextUI hero Image"
+          src="/Perfil.jpg"
+          width={240}
+          isBlurred
+        />
 
         <div className="flex flex-col text-white items-start gap-2">
           <p className="text-2xl font-bold">Jose Sorto Ixcamparij</p>
