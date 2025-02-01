@@ -13,6 +13,13 @@
       "state": "Completed"
     },
     {
+      "title": "SQL Total",
+      "description": "Basic and advanced concepts of SQL, focused on MySQL.",
+      "type": "Certificate",
+      "state": "Completed",
+      "img": "/Certificate-SQL.webp"
+    },
+    {
       "title": "React and TypeScript Certificate",
       "description": "Certificate in React and TypeScript from Udemy.",
       "type": "Certificate",
