@@ -13,9 +13,12 @@ export default function AboutPage() {
       
       <GeneralInformation />
 
-      <div className="bg-gray-900 x w-full rounded-xl overflow-y-auto p-6">
-        <div className="mb-5 gap-5 flex flex-col">
-          <span>
+      <div className="bg-gray-900 x w-[85%] rounded-xl overflow-y-auto p-8">
+        <div className="flex flex-col p-6 gap-6">
+
+          <h1 className="text-4xl font-bold text-center">About Me</h1>
+
+          <span className="">
             I am
             <span className="font-bold text-blue-300"> Software Engineer </span>
             with skills in

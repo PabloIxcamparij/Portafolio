@@ -9,16 +9,17 @@ import {
 
 export default function InformationGeneral() {
   return (
-    <div className="flex flex-col bg-gray-900 rounded-2xl justify-around items-center h-full w-full lg:w-1/3 pt-10 p-4 gap-5">
-      <div className="flex flex-col sm:flex-row lg:flex-col gap-5 items-center">
+    <div className="flex flex-col bg-gray-900 rounded-2xl justify-around items-center h-full w-[80%] lg:w-1/2 pt-5 p-4 gap-5">
+      
+      <div className="flex flex-col md:flex-row gap-10 items-center">
         <Image
           alt="Me"
           src="/Perfil.jpg"
-          className="rounded-full w-40 h-40 object-cover hover:scale-125 hover:transition-transform duration-1000 "
+          className="rounded-full w-60 h-60 object-cover hover:scale-110 hover:transition-transform duration-1000 "
           isBlurred
         />
 
-        <div className="flex flex-col text-center gap-2">
+        <div className="flex flex-col text-center gap-2 px-5">
           <h1 class="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 text-2xl text-white font-bold">
             José Ixcamparij
           </h1>
@@ -26,7 +27,7 @@ export default function InformationGeneral() {
         </div>
       </div>
 
-      <div className="flex flex-wrap justify-center items-center w-full gap-10">
+      <div className="flex flex-wrap justify-center items-center w-full pt-12 gap-10">
         <a
           href="https://github.com/PabloIxcamparij"
           target="_blank"
