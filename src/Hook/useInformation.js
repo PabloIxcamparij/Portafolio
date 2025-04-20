@@ -18,19 +18,6 @@ export const useInformation = () => {
     };
   }, []);
 
-  const pageTitle = useMemo(() => {
-    switch (pathname) {
-      case "/":
-        return "About me";
-      case "/projects":
-        return "My Projects";
-      case "/education":
-        return "My education";
-      default:
-        return "Page";
-    }
-  }, [pathname]);
-
   const buttons = [
     {
       title: "About me",
@@ -54,7 +41,6 @@ export const useInformation = () => {
 
   return {
     isMobile,
-    pageTitle,
     buttons,
   };
 };
