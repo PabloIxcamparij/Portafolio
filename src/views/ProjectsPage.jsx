@@ -5,7 +5,7 @@ export default function ProjectsPage() {
   const [clickIndex, setclickIndex] = useState(0);
 
   return (
-    <div className="flex h-[60vh] w-full bg-slate-800 rounded-2xl p-6 gap-6">
+    <div className="flex h-[60vh] w-[80%] bg-slate-900 rounded-2xl p-2 gap-10">
       
       {/* Imágenes centradas */}
       <div className="hidden sm:flex relative justify-center items-center flex-1">
@@ -28,7 +28,7 @@ export default function ProjectsPage() {
       </div>
 
       {/* Lista de títulos con overflow */}
-      <div className="flex flex-col gap-6 p-10 w-full justify-center items-center sm:w-1/3 overflow-y-auto max-h-full">
+      <div className="flex flex-col gap-6 p-10 w-full justify-center items-center sm:w-2/5 overflow-y-auto max-h-full">
         {projectData.map((project, index) => (
           <h1
             key={index}
