@@ -10,7 +10,7 @@ export default function Layout() {
     <div className="flex flex-col min-h-screen w-full bg-gray-950 text-white p-6 gap-6">
       <Headermenu />
 
-      <main className="pt-10">
+      <main className="flex items-center justify-center pt-10">
         <Outlet />
       </main>
     </div>

@@ -15,7 +15,8 @@
         {
           "title": "Tailwind"
         }
-      ]
+      ],
+      "img": "/ImgProjects/Img-RecipeBook.png"
     },
     {
       "title": "Guitar store",
@@ -32,7 +33,8 @@
         {
           "title": "CSS"
         }
-      ]
+      ],
+      "img": "/ImgProjects/Img-IxcamShop.png"
     },
     {
       "title": "EcoCard",
@@ -49,7 +51,8 @@
         {
           "title": "Tailwind"
         }
-      ]
+      ],
+      "img": "/ImgProjects/Img-EcoCard.png"
     }
   ]
 }

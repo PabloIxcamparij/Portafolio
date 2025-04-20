@@ -4,14 +4,17 @@ import { Accordion, AccordionItem } from "@nextui-org/react";
 
 export default function SpaceProject({ project }) {
   return (
-    <div className="flex flex-col-reverse md:flex-row w-full bg-slate-800 text-white rounded-2xl p-4 gap-4">
-      <iframe
-        src={project.urlProject}
+    <div className="flex justify-center items-center gap-6">
+      
+      <img
+        src={project.img}
         title="Project Preview"
-        className=" bg-white w-full h-80 md:w-3/4 md:h-ful rounded-lg"
+        className=" bg-white w-[50%]  h-[80%] rounded-lg object-cover"
       />
 
-      <div className="w-full flex flex-col md:w-2/4 gap-4">
+      <h1 className="text-2xl font-bold">{project.title}</h1>
+
+      {/* <div className="w-full flex flex-col md:w-2/4 gap-4">
         <h2 className=" text-lg font-bold"> {project.title} </h2>
 
         <span>{project.description}</span>
@@ -41,7 +44,7 @@ export default function SpaceProject({ project }) {
             
           </AccordionItem>
         </Accordion>
-      </div>
+      </div> */}
     </div>
   );
 }
