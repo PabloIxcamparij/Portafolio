@@ -9,11 +9,9 @@ import GeneralInformation from "../Components/GeneralInformation";
 
 export default function AboutPage() {
   return (
-    <div className="flex flex-col  items-center lg:items-start lg:flex-row gap-6 text-white">
+    <div className="flex flex-col-reverse items-center lg:items-start lg:flex-row gap-6 ">
       
-      <GeneralInformation />
-
-      <div className="bg-gray-900 x w-full rounded-xl overflow-y-auto p-5">
+      <div className="bg-gray-900 x w-full rounded-xl overflow-y-auto p-6">
         <div className="mb-5 gap-5 flex flex-col">
           <span>
             I am
@@ -69,6 +67,8 @@ export default function AboutPage() {
           />
         </div>
       </div>
+
+      <GeneralInformation />
     </div>
   );
 }
