@@ -5,7 +5,7 @@ const HeaderMenuButton = React.forwardRef(({ dataButton, isActive, isMobile }, r
   const [hoverAbout, setHoverAbout] = useState(false);
   const navigate = useNavigate();
 
-  const hoverClass = isActive || hoverAbout ? "bg-gray-900 text-white" : "text-gray-400";
+  const hoverClass = isActive || hoverAbout ? "bg-gray-900" : "";
 
   const handleClick = (e) => {
     e.preventDefault();
@@ -31,14 +31,14 @@ const HeaderMenuButton = React.forwardRef(({ dataButton, isActive, isMobile }, r
         fill="none"
         viewBox="0 0 24 24"
         strokeWidth="1.5"
-        stroke="currentColor"
-        className={`h-8 w-8 transition duration-300 ${hoverClass}`}
+        stroke="white"
+        className={`h-8 w-8 transition duration-300`}
       >
         <path strokeLinecap="round" strokeLinejoin="round" d={dataButton.svg} />
       </svg>
 
       {!isMobile && (
-        <h1 className={`font-bold ${hoverClass}`}>{dataButton.title}</h1>
+        <h1 className={`font-bold`}>{dataButton.title}</h1>
       )}
     </button>
   );

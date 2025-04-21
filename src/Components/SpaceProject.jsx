@@ -4,21 +4,18 @@ import { Accordion, AccordionItem } from "@nextui-org/react";
 
 export default function SpaceProject({ project }) {
   return (
-    <div className="flex justify-center items-center gap-6">
-      
+    <div className="flex flex-col lg:flex-row gap-4 w-[85%] bg-gray-900 rounded-lg p-6">
       <img
         src={project.img}
-        title="Project Preview"
-        className=" bg-white w-[50%]  h-[80%] rounded-lg object-cover"
+        alt={project.title}
+        className="rounded-2xl w-full h-[40vh] object-contain"
       />
 
-      <h1 className="text-2xl font-bold">{project.title}</h1>
-
-      {/* <div className="w-full flex flex-col md:w-2/4 gap-4">
-        <h2 className=" text-lg font-bold"> {project.title} </h2>
+      <div className="flex flex-col gap-5 w-full">
+        <h2 className="text-lg font-bold"> {project.title} </h2>
 
         <span>{project.description}</span>
-
+        
         <Link isExternal href={project.urlProject} showAnchorIcon>
           Link to the project website
         </Link>
@@ -36,15 +33,12 @@ export default function SpaceProject({ project }) {
           >
             <ul className="grid grid-cols-2 sm:grid-cols-3 gap-5">
               {project.tecUsing.map((tec, index) => (
-                <li key={index}>
-                  {tec.title}
-                </li>
+                <li key={index}>{tec.title}</li>
               ))}
             </ul>
-            
           </AccordionItem>
         </Accordion>
-      </div> */}
+      </div>
     </div>
   );
 }

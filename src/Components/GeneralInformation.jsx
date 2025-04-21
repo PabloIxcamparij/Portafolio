@@ -1,6 +1,5 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Image } from "@nextui-org/react";
 import {
   faGithub,
   faLinkedin,
@@ -15,12 +14,11 @@ export default function InformationGeneral() {
         <img
           alt="Me"
           src="/Perfil.jpg"
-          className="rounded-full w-60 h-60 object-cover hover:scale-110 hover:transition-transform duration-1000 "
-          isBlurred
+          className="rounded-full w-60 h-60 object-cover hover:scale-110 hover:transition-transform duration-1000"
         />
 
         <div className="flex flex-col text-center gap-2 px-5">
-          <h1 class="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 text-2xl text-white font-bold">
+          <h1 className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 text-2xl text-white font-bold">
             José Ixcamparij
           </h1>
           <h1 className="text-lg font-bold">Software Engineer</h1>
