@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { colorVariants, Image } from "@nextui-org/react";
+import { Image } from "@nextui-org/react";
 import {
   faGithub,
   faLinkedin,
@@ -12,7 +12,7 @@ export default function InformationGeneral() {
     <div className="flex flex-col bg-gray-900 rounded-2xl justify-around items-center h-full w-[80%] lg:w-1/2 pt-5 p-4 gap-5">
       
       <div className="flex flex-col md:flex-row gap-10 items-center">
-        <Image
+        <img
           alt="Me"
           src="/Perfil.jpg"
           className="rounded-full w-60 h-60 object-cover hover:scale-110 hover:transition-transform duration-1000 "
