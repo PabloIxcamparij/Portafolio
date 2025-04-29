@@ -10,7 +10,7 @@ import GeneralInformation from "../Components/GeneralInformation";
 
 export default function AboutPage() {
   return (
-    <div className="w-full flex flex-col items-center gap-6">
+    <div className="w-full flex flex-col items-center gap-3">
       <GeneralInformation />
 
       <div className="w-full p-4 flex flex-col gap-6 lg:grid lg:grid-cols-8 lg:grid-rows-8">

@@ -8,18 +8,18 @@ import {
 
 export default function InformationGeneral() {
   return (
-    <div className="flex flex-col bg-gray-900 rounded-2xl justify-around items-center h-full w-[80%] lg:w-1/2 pt-5 p-4 gap-5">
+    <div className="flex flex-col bg-gray-900 rounded-2xl justify-around items-center w-3/4 lg:w-1/2 p-4 gap-2">
       <div className="flex flex-col md:flex-row gap-10 items-center">
         <img
           alt="Me"
           src="/Perfil.jpg"
-          className="rounded-full w-60 h-60 object-cover opacity-0 transition-opacity duration-500"
+          className="rounded-full w-40 h-40 object-cover opacity-0 transition-opacity duration-500"
           onLoad={(e) => {
             e.currentTarget.style.opacity = 1;
           }}
         />
 
-        <div className="flex flex-col text-center gap-2 px-5">
+        <div className="flex flex-col text-center gap-2">
           <h1 className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 text-2xl text-white font-bold">
             José Ixcamparij
           </h1>
@@ -27,7 +27,7 @@ export default function InformationGeneral() {
         </div>
       </div>
 
-      <div className="flex flex-wrap justify-center items-center w-full pt-12 gap-10">
+      <div className="flex flex-wrap justify-center items-center w-full pt-5 gap-10">
         <a
           href="https://github.com/PabloIxcamparij"
           target="_blank"

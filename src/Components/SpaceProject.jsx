@@ -4,11 +4,15 @@ import { Accordion, AccordionItem } from "@nextui-org/react";
 
 export default function SpaceProject({ project }) {
   return (
-    <div className="flex flex-col lg:flex-row gap-4 w-[85%] bg-gray-900 rounded-lg p-6">
+    <div className="flex flex-col lg:flex-row gap-6 w-[85%] bg-gray-900 rounded-lg p-6">
       <img
         src={project.img}
         alt={project.title}
-        className="rounded-2xl w-full h-[40vh] object-contain"
+        loading="lazy"
+        className="rounded-2xl w-full h-[45vh] lg:w-[55%] object-contain opacity-0 transition-opacity duration-500"
+        onLoad={(e) => {
+          e.currentTarget.style.opacity = 1;
+        }}
       />
 
       <div className="flex flex-col gap-5 w-full">
