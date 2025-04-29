@@ -9,12 +9,14 @@ import {
 export default function InformationGeneral() {
   return (
     <div className="flex flex-col bg-gray-900 rounded-2xl justify-around items-center h-full w-[80%] lg:w-1/2 pt-5 p-4 gap-5">
-      
       <div className="flex flex-col md:flex-row gap-10 items-center">
         <img
           alt="Me"
           src="/Perfil.jpg"
-          className="rounded-full w-60 h-60 object-cover hover:scale-110 hover:transition-transform duration-1000"
+          className="rounded-full w-60 h-60 object-cover opacity-0 transition-opacity duration-500"
+          onLoad={(e) => {
+            e.currentTarget.style.opacity = 1;
+          }}
         />
 
         <div className="flex flex-col text-center gap-2 px-5">
