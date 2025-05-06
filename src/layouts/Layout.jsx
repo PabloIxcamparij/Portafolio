@@ -9,9 +9,10 @@ export default function Layout() {
       
       <Headermenu />
 
-      <main className="flex items-center justify-center">
+      <main className="flex items-center justify-center lg:px-8">
         <Outlet />
       </main>
+
     </div>
   );
 }

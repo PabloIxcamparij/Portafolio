@@ -3,6 +3,7 @@ import {
   frontEndImages,
   backEndImages,
   databaseImages,
+  generalTechImages,
 } from "../Data/ImgURL.json";
 
 import SpaceAboveMe from "../Components/SpaceAboveMe";
@@ -10,17 +11,19 @@ import GeneralInformation from "../Components/GeneralInformation";
 
 export default function AboutPage() {
   return (
-    <div className="w-full flex flex-col items-center gap-3">
+    <div className="w-full flex flex-col items-center">
+      
       <GeneralInformation />
 
       <div className="w-full p-4 flex flex-col gap-6 lg:grid lg:grid-cols-8 lg:grid-rows-8">
-        {/* 5. About Me */}
-        <div className="bg-gray-900 p-6 rounded-xl flex flex-col lg:col-span-8 lg:row-span-2 lg:col-start-1 lg:row-start-1">
+        
+        <div className="text-wrap md:px-16 rounded-xl flex flex-col lg:col-span-8 lg:row-span-2 lg:col-start-1 lg:row-start-1">
+         
           <h1 className="text-4xl font-bold text-center mb-4 text-white">
             About Me
           </h1>
 
-          <span className="">
+          <span>
             I am
             <span className="font-bold text-blue-300"> Software Engineer </span>
             with skills in
@@ -45,53 +48,51 @@ export default function AboutPage() {
           </span>
         </div>
 
-        {/* 4. Front End */}
-        <div className="bg-gray-900 p-4 rounded-xl flex flex-col lg:col-span-4 lg:row-span-3 lg:col-start-1 lg:row-start-3">
+        <div className="bg-gray-900  rounded-xl flex flex-col p-6 items-center justify-around lg:col-span-4 lg:row-span-3 lg:col-start-1 lg:row-start-3">
           <SpaceAboveMe
             dataSpace={{
               title: "Front End",
               information:
-                "In the development of application logic I have experience with:",
+                "Frontend development is my main focus. I love designing and building web experiences. React has become one of my favorite tools, and I'm always open to exploring new technologies.",
               dataBaseUrl: frontEndImages,
             }}
           />
         </div>
 
-        {/* 3. Back End */}
-        <div className="bg-gray-900 p-4 rounded-xl flex flex-col lg:col-span-4 lg:row-span-3 lg:col-start-5 lg:row-start-3">
+        <div className="bg-gray-900 rounded-xl flex flex-col p-6 items-center justify-around lg:col-span-4 lg:row-span-3 lg:col-start-5 lg:row-start-3">
           <SpaceAboveMe
             dataSpace={{
               title: "Back End",
               information:
-                "In application design I have knowledge of the following frameworks:",
+                "Although backend is not my main area, I enjoy solving logical challenges and structuring server-side logic. I've gained solid experience.",
               dataBaseUrl: backEndImages,
             }}
           />
         </div>
 
-        {/* 1. General Technologies */}
-        <div className="bg-gray-900 p-4 rounded-xl flex flex-col lg:col-span-6 lg:row-span-3 lg:col-start-1 lg:row-start-6">
+        <div className="bg-gray-900 rounded-xl flex flex-col p-6 items-center justify-around lg:col-span-5 lg:row-span-3 lg:col-start-1 lg:row-start-6">
           <SpaceAboveMe
             dataSpace={{
               title: "General Technologies",
               information:
-                "Some technologies I also use that fit both backend and standalone environments:",
-              dataBaseUrl: backEndImages, // Puedes filtrar si solo quieres Java, C#, etc.
+                "I have solid foundations in programming with Java and C#, and I’ve approached Python for its versatility and ease of use. These languages have helped shape the way I think about problem solving and software design.",
+              dataBaseUrl: generalTechImages,
             }}
           />
         </div>
 
-        {/* 2. Databases */}
-        <div className="bg-gray-900 p-4 rounded-xl flex flex-col lg:col-span-2 lg:row-span-3 lg:col-start-7 lg:row-start-6">
+        <div className="bg-gray-900 rounded-xl flex flex-col p-6 items-center justify-around lg:col-span-3 lg:row-span-3 lg:col-start-6 lg:row-start-6">
           <SpaceAboveMe
             dataSpace={{
               title: "Databases",
-              information: "I’ve worked with these database managers:",
+              information:
+                "Databases have been a fundamental part of my career. I’ve worked with various relational",
               dataBaseUrl: databaseImages,
             }}
           />
         </div>
       </div>
+
     </div>
   );
 }
