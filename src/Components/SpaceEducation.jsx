@@ -13,7 +13,7 @@ export default function SpaceEducation({ education }) {
 
   return (
     <Card
-      className="text-white bg-gray-800"
+      className="text-white bg-gray-800 animate-fadeIn"
     >
       <CardHeader className="flex gap-3">
         <div className="flex flex-col">

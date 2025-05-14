@@ -2,25 +2,24 @@ import React from "react";
 
 export default function SpaceAbout({ dataSpace }) {
   return (
-    <>
+    <div className="w-full">
       <h2 className="text-xl font-bold mb-2 text-red-500">{dataSpace.title}</h2>
 
-      <span className="px-3">{dataSpace.information}</span>
+      <p className="px-3">{dataSpace.information}</p>
 
-      <ul className="w-full flex gap-5 overflow-x-auto h-[70px]">
-        {dataSpace.dataBaseUrl.map((img, index) => (
-          <li
-            key={index}
-            className="flex items-center justify-center"
-          >
-            <img
-              src={img.src}
-              alt={img.alt}
-              className="w-full h-full object-contain"
-            />
-          </li>
-        ))}
-      </ul>
-    </>
+      <div className="w-full overflow-x-auto scrollbar-hide mt-5">
+        <ul className="flex gap-5 min-w-max px-3">
+          {dataSpace.dataBaseUrl.map((img, index) => (
+            <li key={index} className="flex items-center justify-center">
+              <img
+                src={img.src}
+                alt={img.alt}
+                className="w-[50px] h-[50px] object-contain"
+              />
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
   );
 }

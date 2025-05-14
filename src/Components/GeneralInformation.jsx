@@ -8,14 +8,12 @@ import {
 
 export default function InformationGeneral() {
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center w-full p-4 gap-5">
+    <div className="flex flex-col md:flex-row justify-center items-center w-full p-4 gap-5 animate-fadeIn">
       <img
         alt="Me"
         src="/Perfil.jpg"
-        className="rounded-full w-60 h-60 object-cover opacity-0 transition-opacity duration-500"
-        onLoad={(e) => {
-          e.currentTarget.style.opacity = 1;
-        }}
+        className="rounded-full w-60 h-60 object-cover"
+       
       />
 
       <div className="flex flex-col text-center gap-2">

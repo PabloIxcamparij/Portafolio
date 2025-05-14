@@ -20,20 +20,23 @@
       "img": "/ImgProjects/Img-RecipeBook.png"
     },
     {
-      "title": "Guitar store",
-      "description": "Design of a guitar store. It is made in react, it is reactive, and uses local storage to keep track of the cart.",
-      "url": "https://github.com/PabloIxcamparij/Proyecto_React_Uno.git",
-      "urlProject": "https://guitarixcam.netlify.app",
+      "title": "IxcamaShop",
+      "description": "Project created for a relative using React and TypeScript. Its purpose is to function as a simple online catalog that displays and filters football team shirts. It is connected to a database using Supabase and deployed on Vercel, as the project is intended to be maintained without any costs.",
+      "url": "https://github.com/PabloIxcamparij/Catalog",
+      "urlProject": "https://ixcamshop.vercel.app/",
       "type": "Front",
       "tecUsing": [
         {
           "title": "React"
         },
         {
-          "title": "JavaScript"
+          "title": "TypeScript"
         },
         {
-          "title": "CSS"
+          "title": "Tailwind"
+        },
+        {
+          "title": "DB Subase"
         }
       ],
       "img": "/ImgProjects/Img-IxcamShop.png"
